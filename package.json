@@ -1,0 +1,21 @@
+{
+  "name": "kaufee-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/frankxuzy/kaufee-ts.git",
+  "author": "Frank <xuzy213@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=9.11"
+  },
+  "scripts": {
+    "dev": "nodemon server --watch server & yarn build --watch",
+    "build": ""
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
