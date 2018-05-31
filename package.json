@@ -10,12 +10,37 @@
   },
   "scripts": {
     "dev": "nodemon server --watch server & yarn build --watch",
-    "build": ""
+    "build": "webpack --config ./client/src/webpack.config.js"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
   },
   "dependencies": {
     "express": "^4.16.3"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.17.5",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.4",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4"
   }
 }
