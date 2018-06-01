@@ -20,7 +20,7 @@ const AppPaths = () => {
   return (
     <div className="app-paths">
       <Route path='/' component={Navbar} />
-      <Route exactpath='/' component={Home} />      
+      <Route exact path='/' component={Home} />      
       <Route path='/history' component={History} />
       <Route path='/registor' component={Registor} />
       <Route path='/login' component={Login} />
